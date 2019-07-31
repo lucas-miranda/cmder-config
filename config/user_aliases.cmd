@@ -18,4 +18,4 @@ nvim=nvim-qt.exe --fullscreen --no-ext-tabline --timeout 5000 $*
 colors=sh colors.sh
 cd_home=cd C:\Users\miran\  
 cd_nvim=cd C:\Users\miran\AppData\Local\nvim\  
-kill_useless=sh kill_useless.sh  
+kill_useless=sh kill_useless.sh $*  
