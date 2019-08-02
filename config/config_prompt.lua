@@ -233,7 +233,7 @@ function get_git_display()
             local branches = git.branches("remote")
 
             for _, branch_name in ipairs(branches) do
-                if (string.find(branch_name, branch)) then
+                if (string.find(branch_name, branch, 1, true)) then
                     exists_remote_branch = true
                     break
                 end
