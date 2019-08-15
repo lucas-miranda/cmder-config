@@ -22,6 +22,8 @@ showHelp() {
 
 Options:
   -i, --ignore [FILENAME]   Ignore filename
+  -f, --force               Force file copy, even if it 
+                            already exists
   -v, --verbose             Make program be more talkactive
   -h, --help                Show this message"
 }
@@ -85,6 +87,7 @@ update_progress() {
 # args
 
 verbose=false
+force=false
 ignore_filenames=()
 
 if [ -d "$1" ]
@@ -111,6 +114,9 @@ do
     elif [ "$arg" == "-v" ] || [ "$arg" == "--verbose" ]
     then
         verbose=true
+    elif [ "$arg" == "-f" ] || [ "$arg" == "--force" ]
+    then
+        force=true
     elif [ "$arg" == "-h" ] || [ "$arg" == "--help" ]
     then
         exit 0
@@ -138,14 +144,41 @@ do
     containsValue $filename "${ignore_filenames[@]}"
     should_be_ignored=$?
 
-    if [ $should_be_ignored -eq "0" ]
+    if [ "$should_be_ignored" -eq "0" ]
     then
-        cp "$filename" -t $1
-        if $verbose
+        should_move_file=false
+
+        # check if should move file
+        if ! $force && [ -f "$1/$filename" ]
         then
-            echo "Copied: $filename"
+            filesize=$(stat -c %s "$filename")
+            last_modification=$(stat -c %Y "$filename")
+            target_filesize=$(stat -c %s "$1/$filename")
+            target_last_modification=$(stat -c %Y "$1/$filename")
+
+            if [ "$last_modification" -gt "$target_last_modification" ] || [ "$filesize" -ne "$target_filesize" ]
+            then
+                should_move_file=true
+            fi
+        fi
+
+        if $force || $should_move_file
+        then
+            cp "$filename" -t "$1"
+
+            if $verbose
+            then
+                echo "Copied: $filename"
+            else
+                files_copied=$((files_copied + 1))
+            fi
         else
-            files_copied=$((files_copied + 1))
+            if $verbose
+            then
+                echo "Already copied: $filename"
+            else
+                files_copied=$((files_copied + 1))
+            fi
         fi
     else
         if $verbose
