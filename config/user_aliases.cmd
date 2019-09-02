@@ -19,3 +19,4 @@ cd_home=cd C:\Users\miran\
 cd_nvim=cd C:\Users\miran\AppData\Local\nvim\
 kill_useless=sh kill_useless.sh $*
 ls=ls -F --color --almost-all $*  
+task=bash -c "task $*"  
