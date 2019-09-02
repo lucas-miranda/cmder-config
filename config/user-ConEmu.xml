@@ -568,13 +568,14 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="&lt;Startup&gt;" modified="2019-09-01 19:26:58" build="190714">
+				<key name="&lt;Startup&gt;" modified="2019-09-02 17:21:13" build="190714">
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Active" type="long" data="1"/>
-					<value name="Count" type="long" data="3"/>
-					<value name="Cmd1" type="string" data='&gt; -cur_console:b -cur_console:d:C:\Users\miran\source\repos\Raccoon -cur_console:C:C:\cmder\icons\cmder.ico cmd /k ""%ConEmuDir%\..\init.bat" "'/>
+					<value name="Active" type="long" data="4"/>
+					<value name="Count" type="long" data="4"/>
+					<value name="Cmd1" type="string" data='-cur_console:b -cur_console:d:C:\Users\miran\source\repos -cur_console:C:C:\cmder\icons\cmder.ico cmd /k ""%ConEmuDir%\..\init.bat" "'/>
 					<value name="Cmd2" type="string" data='-cur_console:fp -cur_console:d:C:\cmder -cur_console:C:C:\Users\miran\AppData\Local\lxss\bash.ico -cur_console:m:/mnt set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl'/>
-					<value name="Cmd3" type="string" data='-cur_console:b -cur_console:d:"C:\Users\miran\Dropbox\Pasta da equipe DeadCat\Grimoire\Editor (Debug)" -cur_console:C:C:\cmder\icons\cmder.ico cmd /k ""%ConEmuDir%\..\init.bat" "'/>
+					<value name="Cmd3" type="string" data='-cur_console:b -cur_console:d:C:\cmder\bin -cur_console:C:C:\cmder\icons\cmder.ico cmd /k ""%ConEmuDir%\..\init.bat" "'/>
+					<value name="Cmd4" type="string" data='&gt;* -cur_console:d:C:\Windows\Logs\CBS -cur_console:C:C:\cmder\icons\cmder.ico "C:\WINDOWS\SYSTEM32\cmd.exe"  /k ""%ConEmuDir%\..\init.bat" "'/>
 				</key>
 			</key>
 			<key name="Apps" modified="2018-02-22 06:05:13" build="171109">
