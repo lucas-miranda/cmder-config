@@ -20,3 +20,5 @@ cd_nvim=cd C:\Users\miran\AppData\Local\nvim\
 kill_useless=sh kill_useless.sh $*
 ls=ls -F --color --almost-all $*  
 task=bash -c "task $*"  
+sst=sh status.sh  
+sbox=sh dropbox.sh  

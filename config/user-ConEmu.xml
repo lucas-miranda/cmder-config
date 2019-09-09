@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-09-01 19:26:58" build="190714">
+		<key name=".Vanilla" modified="2019-09-07 20:17:32" build="190714">
 			<value name="ColorTable00" type="dword" data="00342c28"/>
 			<value name="ColorTable01" type="dword" data="0070635c"/>
 			<value name="ColorTable02" type="dword" data="0079c398"/>
@@ -127,8 +127,8 @@
 			<value name="ConWnd Width" type="dword" data="00000093"/>
 			<value name="ConWnd Height" type="dword" data="00000032"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="245"/>
-			<value name="ConWnd Y" type="long" data="61"/>
+			<value name="ConWnd X" type="long" data="354"/>
+			<value name="ConWnd Y" type="long" data="91"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -165,7 +165,7 @@
 			<value name="CTS.ActMode" type="hex" data="02"/>
 			<value name="CTS.RBtnAction" type="hex" data="03"/>
 			<value name="CTS.MBtnAction" type="hex" data="00"/>
-			<value name="CTS.ColorIndex" type="hex" data="E0"/>
+			<value name="CTS.ColorIndex" type="hex" data="90"/>
 			<value name="ClipboardConfirmEnter" type="hex" data="01"/>
 			<value name="ClipboardConfirmLonger" type="ulong" data="200"/>
 			<value name="FarGotoEditorOpt" type="hex" data="01"/>
@@ -568,14 +568,13 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="&lt;Startup&gt;" modified="2019-09-02 17:21:13" build="190714">
+				<key name="&lt;Startup&gt;" modified="2019-09-07 17:40:32" build="190714">
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Active" type="long" data="4"/>
-					<value name="Count" type="long" data="4"/>
+					<value name="Active" type="long" data="2"/>
+					<value name="Count" type="long" data="3"/>
 					<value name="Cmd1" type="string" data='-cur_console:b -cur_console:d:C:\Users\miran\source\repos -cur_console:C:C:\cmder\icons\cmder.ico cmd /k ""%ConEmuDir%\..\init.bat" "'/>
-					<value name="Cmd2" type="string" data='-cur_console:fp -cur_console:d:C:\cmder -cur_console:C:C:\Users\miran\AppData\Local\lxss\bash.ico -cur_console:m:/mnt set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl'/>
-					<value name="Cmd3" type="string" data='-cur_console:b -cur_console:d:C:\cmder\bin -cur_console:C:C:\cmder\icons\cmder.ico cmd /k ""%ConEmuDir%\..\init.bat" "'/>
-					<value name="Cmd4" type="string" data='&gt;* -cur_console:d:C:\Windows\Logs\CBS -cur_console:C:C:\cmder\icons\cmder.ico "C:\WINDOWS\SYSTEM32\cmd.exe"  /k ""%ConEmuDir%\..\init.bat" "'/>
+					<value name="Cmd2" type="string" data='&gt; -cur_console:fp -cur_console:d:C:\cmder -cur_console:C:C:\Users\miran\AppData\Local\lxss\bash.ico -cur_console:m:/mnt set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl'/>
+					<value name="Cmd3" type="string" data='-cur_console:b -cur_console:d:"C:\Users\miran\Dropbox\Pasta da equipe DeadCat\Grimoire\Editor (Debug)\Content" -cur_console:C:C:\cmder\icons\cmder.ico cmd /k ""%ConEmuDir%\..\init.bat" "'/>
 				</key>
 			</key>
 			<key name="Apps" modified="2018-02-22 06:05:13" build="171109">
@@ -1169,7 +1168,7 @@
 			<value name="SuppressBells" type="hex" data="01"/>
 			<value name="ClipboardAllLinesPosix" type="hex" data="00"/>
 			<value name="ClipboardFirstLinePosix" type="hex" data="00"/>
-			<value name="VividColors" type="hex" data="01"/>
+			<value name="VividColors" type="hex" data="00"/>
 			<value name="AnsiExecution" type="hex" data="01"/>
 			<value name="AnsiAllowedCommands" type="multi">
 				<line data="cmd -cur_console:R /cGitShowBranch.cmd"/>
