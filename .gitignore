@@ -1,0 +1,12 @@
+# filetypes
+*.exe
+_fd.ps1
+
+# cmder files
+icons/
+vendor/
+LICENSE
+Version*
+bin/Readme.md
+config/Readme.md
+config/.history
