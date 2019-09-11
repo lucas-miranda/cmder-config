@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
   <key name="ConEmu">
-    <key name=".Vanilla" modified="2019-07-20 18:33:30" build="180626">
+    <key name=".Vanilla" modified="2019-09-10 20:48:51" build="180626">
       <value name="ColorTable00" type="dword" data="00222827" />
       <value name="ColorTable01" type="dword" data="009e5401" />
       <value name="ColorTable02" type="dword" data="0004aa74" />
@@ -44,7 +44,7 @@
       <value name="ExtendFontNormalIdx" type="hex" data="01" />
       <value name="ExtendFontBoldIdx" type="hex" data="0C" />
       <value name="ExtendFontItalicIdx" type="hex" data="0D" />
-      <value name="CursorTypeActive" type="dword" data="000232c2" />
+      <value name="CursorTypeActive" type="dword" data="000232c1" />
       <value name="CursorTypeInactive" type="dword" data="00823282" />
       <value name="ClipboardDetectLineEnd" type="hex" data="01" />
       <value name="ClipboardBashMargin" type="hex" data="00" />
@@ -63,14 +63,14 @@
       <value name="ConVisible" type="hex" data="00" />
       <value name="ConInMode" type="dword" data="ffffffff" />
       <value name="UseInjects" type="hex" data="01" />
-      <value name="SetDefaultTerminal" type="hex" data="01" />
-      <value name="SetDefaultTerminalStartup" type="hex" data="01" />
+      <value name="SetDefaultTerminal" type="hex" data="00" />
+      <value name="SetDefaultTerminalStartup" type="hex" data="00" />
       <value name="DefaultTerminalNoInjects" type="hex" data="00" />
       <value name="DefaultTerminalConfirm" type="hex" data="01" />
       <value name="DefaultTerminalApps" type="string" data="explorer.exe" />
       <value name="ProcessAnsi" type="hex" data="01" />
       <value name="UseClink" type="hex" data="01" />
-      <value name="StartType" type="hex" data="03" />
+      <value name="StartType" type="hex" data="02" />
       <value name="CmdLine" type="string" data="" />
       <value name="StartTasksFile" type="string" data="" />
       <value name="StartTasksName" type="string" data="{cmd::Cmder}" />
@@ -78,7 +78,7 @@
       <value name="StartFarEditors" type="hex" data="00" />
       <value name="StoreTaskbarkTasks" type="hex" data="00" />
       <value name="StoreTaskbarCommands" type="hex" data="00" />
-      <value name="SingleInstance" type="hex" data="00" />
+      <value name="SingleInstance" type="hex" data="01" />
       <value name="ShowHelpTooltips" type="hex" data="01" />
       <value name="Multi" type="hex" data="01" />
       <value name="Multi.ShowButtons" type="hex" data="01" />
@@ -98,14 +98,14 @@
       <value name="Multi.SplitWidth" type="hex" data="04" />
       <value name="Multi.SplitHeight" type="hex" data="04" />
       <value name="KeyboardHooks" type="hex" data="02" />
-      <value name="FontName" type="string" data="FuraCode NF" />
+      <value name="FontName" type="string" data="Consolas" />
       <value name="FontName2" type="string" data="Lucida Console" />
       <value name="FontAutoSize" type="hex" data="00" />
       <value name="FontSize" type="ulong" data="16" />
       <value name="FontSizeX" type="ulong" data="0" />
       <value name="FontSizeX2" type="ulong" data="0" />
       <value name="FontSizeX3" type="ulong" data="0" />
-      <value name="FontCharSet" type="hex" data="01" />
+      <value name="FontCharSet" type="hex" data="00" />
       <value name="Anti-aliasing" type="ulong" data="6" />
       <value name="FontBold" type="hex" data="00" />
       <value name="FontItalic" type="hex" data="00" />
@@ -124,11 +124,11 @@
       <value name="ColorKeyValue" type="dword" data="00010101" />
       <value name="UseCurrentSizePos" type="hex" data="01" />
       <value name="WindowMode" type="dword" data="0000051f" />
-      <value name="ConWnd Width" type="dword" data="00000064" />
-      <value name="ConWnd Height" type="dword" data="00000032" />
+      <value name="ConWnd Width" type="dword" data="00000078" />
+      <value name="ConWnd Height" type="dword" data="0000001e" />
       <value name="Cascaded" type="hex" data="01" />
-      <value name="ConWnd X" type="long" data="966" />
-      <value name="ConWnd Y" type="long" data="160" />
+      <value name="ConWnd X" type="long" data="219" />
+      <value name="ConWnd Y" type="long" data="194" />
       <value name="16bit Height" type="ulong" data="0" />
       <value name="AutoSaveSizePos" type="hex" data="01" />
       <value name="IntegralSize" type="hex" data="00" />
@@ -326,7 +326,7 @@
       <value name="PanView.UsePicView2" type="hex" data="01" />
       <value name="PanView.RestoreOnStartup" type="hex" data="00" />
       <value name="Update.VerLocation" type="string" data="" />
-      <value name="Update.CheckOnStartup" type="hex" data="00" />
+      <value name="Update.CheckOnStartup" type="hex" data="01" />
       <value name="Update.CheckHourly" type="hex" data="00" />
       <value name="Update.ConfirmDownload" type="hex" data="01" />
       <value name="Update.UseBuilds" type="hex" data="01" />
@@ -494,10 +494,10 @@
           <value name="Hotkey" type="dword" data="00000000" />
           <value name="Flags" type="dword" data="00000000" />
         </key>
-        <key name="Task2" modified="2019-05-21 11:42:31" build="180626">
+        <key name="Task2" modified="2018-02-22 06:05:13" build="171109">
           <value name="Name" type="string" data="{cmd::Cmder}" />
           <value name="GuiArgs" type="string" data=" /icon &quot;%CMDER_ROOT%\icons\cmder.ico&quot;" />
-          <value name="Cmd1" type="string" data="cmd /k &quot;&quot;%ConEmuDir%\..\init.bat&quot; &quot; -new_console:d:C:\Users\miran " />
+          <value name="Cmd1" type="string" data="cmd /k &quot;&quot;%ConEmuDir%\..\init.bat&quot; &quot;" />
           <value name="Active" type="long" data="0" />
           <value name="Count" type="long" data="1" />
           <value name="Hotkey" type="dword" data="00000000" />
@@ -568,64 +568,15 @@
           <value name="Active" type="long" data="0" />
           <value name="Count" type="long" data="1" />
         </key>
-        <key name="&lt;Startup&gt;" modified="2019-07-20 18:33:13" build="180626">
-          <value name="GuiArgs" type="string" data="" />
-          <value name="Active" type="long" data="4" />
-          <value name="Count" type="long" data="4" />
-          <value name="Cmd1" type="string" data="-cur_console:b -cur_console:d:C:\Users\miran\AppData\Local\nvim -cur_console:C:C:\cmder\icons\cmder.ico cmd /k &quot;&quot;%ConEmuDir%\..\init.bat&quot; &quot;" />
-          <value name="Cmd2" type="string" data="-cur_console:b -cur_console:d:C:\Users\miran\source\repos\ConEmu-Color-Themes -cur_console:C:C:\cmder\icons\cmder.ico cmd /k &quot;&quot;%ConEmuDir%\..\init.bat&quot; &quot;" />
-          <value name="Cmd3" type="string" data="-cur_console:p -cur_console:d:C:\Users\miran\source\repos -cur_console:C:C:\Users\miran\AppData\Local\lxss\bash.ico -cur_console:m:/mnt set &quot;PATH=%ConEmuBaseDirShort%\wsl;%PATH%&quot; &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl" />
-          <value name="Cmd4" type="string" data="&gt; -cur_console:d:C:\Users\miran\source\repos\ConEmu-Color-Themes -cur_console:C:C:\cmder\icons\cmder.ico PowerShell -ExecutionPolicy Bypass -NoLogo -NoProfile -NoExit -Command &quot;Invoke-Expression 'Import-Module ''%ConEmuDir%\..\profile.ps1'''&quot;" />
-        </key>
       </key>
       <key name="Apps" modified="2018-02-22 06:05:13" build="171109">
         <value name="Count" type="long" data="0" />
       </key>
-      <key name="Colors" modified="2019-07-20 18:33:13" build="180626">
-        <key name="Palette1" modified="2019-03-27 15:29:12" build="180626">
-          <value name="Name" type="string" data="Dracula" />
+      <key name="Colors" modified="2018-02-22 06:05:13" build="171109">
+        <key name="Palette1" modified="2018-02-22 06:05:13" build="171109">
+          <value name="Name" type="string" data="Monokai" />
           <value name="ExtendColors" type="hex" data="00" />
           <value name="ExtendColorIdx" type="hex" data="0e" />
-          <value name="TextColorIdx" type="hex" data="10" />
-          <value name="BackColorIdx" type="hex" data="10" />
-          <value name="PopTextColorIdx" type="hex" data="10" />
-          <value name="PopBackColorIdx" type="hex" data="10" />
-          <value name="ColorTable00" type="dword" data="00362a28" />
-          <value name="ColorTable01" type="dword" data="00bc4354" />
-          <value name="ColorTable02" type="dword" data="003dde66" />
-          <value name="ColorTable03" type="dword" data="00fbd677" />
-          <value name="ColorTable04" type="dword" data="003c3cee" />
-          <value name="ColorTable05" type="dword" data="00f993bd" />
-          <value name="ColorTable06" type="dword" data="006cb8ff" />
-          <value name="ColorTable07" type="dword" data="00f2f8f8" />
-          <value name="ColorTable08" type="dword" data="005a4744" />
-          <value name="ColorTable09" type="dword" data="00a47262" />
-          <value name="ColorTable10" type="dword" data="007bfa50" />
-          <value name="ColorTable11" type="dword" data="00fde98b" />
-          <value name="ColorTable12" type="dword" data="005555ff" />
-          <value name="ColorTable13" type="dword" data="00c679ff" />
-          <value name="ColorTable14" type="dword" data="008cfaf1" />
-          <value name="ColorTable15" type="dword" data="00f2f8f8" />
-          <value name="ColorTable16" type="dword" data="00000000" />
-          <value name="ColorTable17" type="dword" data="00800000" />
-          <value name="ColorTable18" type="dword" data="00008000" />
-          <value name="ColorTable19" type="dword" data="00808000" />
-          <value name="ColorTable20" type="dword" data="00000080" />
-          <value name="ColorTable21" type="dword" data="00800080" />
-          <value name="ColorTable22" type="dword" data="00008080" />
-          <value name="ColorTable23" type="dword" data="00c0c0c0" />
-          <value name="ColorTable24" type="dword" data="00808080" />
-          <value name="ColorTable25" type="dword" data="00ff0000" />
-          <value name="ColorTable26" type="dword" data="0000ff00" />
-          <value name="ColorTable27" type="dword" data="00ffff00" />
-          <value name="ColorTable28" type="dword" data="000000ff" />
-          <value name="ColorTable29" type="dword" data="00ff00ff" />
-          <value name="ColorTable30" type="dword" data="0000ffff" />
-          <value name="ColorTable31" type="dword" data="00ffffff" />
-        </key>
-        <value name="Count" type="long" data="2" />
-        <key name="Palette2" modified="2019-03-27 15:29:12" build="180626">
-          <value name="Name" type="string" data="Monokai" />
           <value name="TextColorIdx" type="hex" data="10" />
           <value name="BackColorIdx" type="hex" data="10" />
           <value name="PopTextColorIdx" type="hex" data="10" />
@@ -646,6 +597,48 @@
           <value name="ColorTable13" type="dword" data="00b87da8" />
           <value name="ColorTable14" type="dword" data="0081cccc" />
           <value name="ColorTable15" type="dword" data="00ffffff" />
+          <value name="ColorTable16" type="dword" data="00000000" />
+          <value name="ColorTable17" type="dword" data="00800000" />
+          <value name="ColorTable18" type="dword" data="00008000" />
+          <value name="ColorTable19" type="dword" data="00808000" />
+          <value name="ColorTable20" type="dword" data="00000080" />
+          <value name="ColorTable21" type="dword" data="00800080" />
+          <value name="ColorTable22" type="dword" data="00008080" />
+          <value name="ColorTable23" type="dword" data="00c0c0c0" />
+          <value name="ColorTable24" type="dword" data="00808080" />
+          <value name="ColorTable25" type="dword" data="00ff0000" />
+          <value name="ColorTable26" type="dword" data="0000ff00" />
+          <value name="ColorTable27" type="dword" data="00ffff00" />
+          <value name="ColorTable28" type="dword" data="000000ff" />
+          <value name="ColorTable29" type="dword" data="00ff00ff" />
+          <value name="ColorTable30" type="dword" data="0000ffff" />
+          <value name="ColorTable31" type="dword" data="00ffffff" />
+        </key>
+        <value name="Count" type="long" data="2" />
+        <key name="Palette2" modified="2017-01-06 21:01:42" build="161206">
+          <value name="Name" type="string" data="One Dark" />
+          <value name="ExtendColors" type="hex" data="00" />
+          <value name="ExtendColorIdx" type="hex" data="0b" />
+          <value name="TextColorIdx" type="hex" data="10" />
+          <value name="BackColorIdx" type="hex" data="10" />
+          <value name="PopTextColorIdx" type="hex" data="10" />
+          <value name="PopBackColorIdx" type="hex" data="10" />
+          <value name="ColorTable00" type="dword" data="00342c28" />
+          <value name="ColorTable01" type="dword" data="0070635c" />
+          <value name="ColorTable02" type="dword" data="0079c398" />
+          <value name="ColorTable03" type="dword" data="0079c398" />
+          <value name="ColorTable04" type="dword" data="004650be" />
+          <value name="ColorTable05" type="dword" data="00dd78c6" />
+          <value name="ColorTable06" type="dword" data="00669ad1" />
+          <value name="ColorTable07" type="dword" data="00bfb2ab" />
+          <value name="ColorTable08" type="dword" data="00697374" />
+          <value name="ColorTable09" type="dword" data="00efaf61" />
+          <value name="ColorTable10" type="dword" data="0079c398" />
+          <value name="ColorTable11" type="dword" data="00c2b656" />
+          <value name="ColorTable12" type="dword" data="00756ce0" />
+          <value name="ColorTable13" type="dword" data="007a77f2" />
+          <value name="ColorTable14" type="dword" data="005791f9" />
+          <value name="ColorTable15" type="dword" data="00939fa0" />
           <value name="ColorTable16" type="dword" data="00000000" />
           <value name="ColorTable17" type="dword" data="00800000" />
           <value name="ColorTable18" type="dword" data="00008000" />
@@ -722,7 +715,7 @@
       <value name="StatusBar.Hide.Dpi" type="hex" data="01" />
       <value name="TabFlashChanged" type="long" data="8" />
       <value name="TabModifiedSuffix" type="string" data="[*]" />
-      <key name="HotKeys" modified="2019-03-27 15:25:26" build="180626">
+      <key name="HotKeys" modified="2019-09-10 20:48:51" build="180626">
         <value name="KeyMacroVersion" type="hex" data="02" />
         <value name="Multi.Modifier" type="dword" data="00000011" />
         <value name="Multi.ArrowsModifier" type="dword" data="0000005b" />
