@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-09-11 12:49:13" build="180626">
+		<key name=".Vanilla" modified="2019-09-11 19:47:50" build="180626">
 			<value name="ColorTable00" type="dword" data="00342c28"/>
 			<value name="ColorTable01" type="dword" data="0070635c"/>
 			<value name="ColorTable02" type="dword" data="0079c398"/>
@@ -127,8 +127,8 @@
 			<value name="ConWnd Width" type="dword" data="00000078"/>
 			<value name="ConWnd Height" type="dword" data="0000002f"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="590"/>
-			<value name="ConWnd Y" type="long" data="194"/>
+			<value name="ConWnd X" type="long" data="713"/>
+			<value name="ConWnd Y" type="long" data="180"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
