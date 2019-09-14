@@ -153,7 +153,12 @@ git.branches = function (mode)
     elseif (type(mode) == "string") then
         if (mode == "remote") then
             local remote_branches = util.cmd.open_get_lines("git branch --list -r")
-            util.table.copy_values(branches, remote_branches)
+
+            for _, v in ipairs(remote_branches) do
+                if not string.find(v, "HEAD") then
+                    table.insert(branches, v)
+                end
+            end
         elseif (mode == "local") then
             local local_branches = util.cmd.open_get_lines("git branch --list")
             util.table.copy_values(branches, local_branches)
