@@ -23,3 +23,4 @@ sbox=sh dropbox.sh
 cd_home=cd C:\Users\Luke\  
 cd_nvim=cd C:\Users\Luke\AppData\Local\nvim\  
 cd_repos=cd C:\Users\Luke\source\repos\  
+nvim_window=nvim-qt.exe --no-ext-tabline --timeout 5000 $*  
