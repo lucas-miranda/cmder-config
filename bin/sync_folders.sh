@@ -10,12 +10,19 @@
 
 find="C:/Program Files/Git/usr/bin/find.exe"
 
-# icons 
+# standard icons 
 
-file_unknown_icon=""
-file_error_icon=""
-file_copied_icon=""
-file_okay_icon="" # it doesn't need to be copied again
+file_unknown_std_icon="!"
+file_error_std_icon="x"
+file_copied_std_icon="+"
+file_okay_std_icon="*" # it doesn't need to be copied again
+
+# special icons 
+
+file_unknown_special_icon=""
+file_error_special_icon=""
+file_copied_special_icon=""
+file_okay_special_icon="" # it doesn't need to be copied again
 
 ###
 
@@ -23,6 +30,7 @@ show_help() {
     echo "Usage: sync_folders SOURCE_FOLDER TARGET_FOLDER [OPTIONS]...
 
 Options:
+  -s, --std-icon            Use standard icons
   -f, --force               Force file copy, even if it 
                             already exists
   -v, --verbose             Make program be more talkactive
@@ -35,6 +43,7 @@ source_folder=$1
 target_folder=$2
 verbose=false
 force=false
+standard_icons=false
 
 ###
 
@@ -48,6 +57,9 @@ do
     elif [ "$arg" == "-f" ] || [ "$arg" == "--force" ]
     then
         force=true
+    elif [ "$arg" == "-s" ] || [ "$arg" == "--std-icon" ]
+    then
+        standard_icons=true
     elif [ "$arg" == "-h" ] || [ "$arg" == "--help" ]
     then
         show_help
@@ -90,14 +102,32 @@ do
 
         if [ -f "$target_folder/$file" ]
         then
-            icon=$file_copied_icon
+            if $standard_icons
+            then
+                icon=$file_copied_std_icon
+            else
+                icon=$file_copied_special_icon
+            fi
+
             modified_files=$((modified_files + 1)) 
         else
-            icon=$file_error_icon
+            if $standard_icons
+            then
+                icon=$file_error_std_icon
+            else
+                icon=$file_error_special_icon
+            fi
+
             error_files=$((error_files + 1)) 
         fi
     else
-        icon=$file_okay_icon
+        if $standard_icons
+        then
+            icon=$file_okay_std_icon
+        else
+            icon=$file_okay_special_icon
+        fi
+
         verified_files=$((verified_files + 1)) 
     fi
 
