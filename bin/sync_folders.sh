@@ -88,7 +88,7 @@ do
         target_filesize=$(stat -c %s "$target_folder/$file")
         target_last_modification=$(stat -c %Y "$target_folder/$file")
 
-        if [ "$last_modification" -gt "$target_last_modification" ] || [ "$filesize" -ne "$target_filesize" ]
+        if [ "$last_modification" -ne "$target_last_modification" ] || [ "$filesize" -ne "$target_filesize" ]
         then
             copy_file=true
         fi
